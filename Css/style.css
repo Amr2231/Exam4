@@ -1,0 +1,64 @@
+.cursor{
+    cursor: pointer;
+}
+.height{
+    height: 100%;
+}
+.Mainnav{
+    background-color: white;
+}
+.overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s;
+    z-index: -1;
+}
+.inner{
+    position: relative;
+    left: 12%;
+}
+.inner:hover .overlay{
+    top: 0;
+    z-index: 1;
+}
+.Search-Input{
+    position: relative;
+    left: 2%;
+}
+.height-vh{
+    min-height: 106.2vh;
+}
+.start{
+    left: 3%;
+}
+.loading-screen{
+    display: flex;
+    
+}
+.loader{
+    margin: 0 0 2em;
+    height: 100px;
+    width: 20%;
+    text-align: center;
+    padding: 1em;
+    margin: 0 auto 1em;
+    display: inline-block;
+    vertical-align: top;
+    display: flex;
+  }
+  
+  svg path,
+  svg rect{
+    fill: #ffffff;
+  }
+  input::placeholder {
+    color: white !important; 
+  }
+#Contact input::placeholder{
+    color: black !important;
+}
+#imgs{
+    width: 120%;
+}

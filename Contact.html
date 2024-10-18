@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="./Font Awesome/all.min.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+    <link rel="stylesheet" href="./Css/media.css">
+</head>
+<body>
+    <div class="Mainnav shadow-lg rounded-1 d-flex  position-fixed top-0 z-2" style="width: 65px;">
+        <!-- 350px -->
+                    <div class="nav-second bg-black d-flex flex-column justify-content-between p-4 text-white" style="margin-left: -140px;">
+                        <div class="links">
+                            <ul class="list-unstyled d-flex flex-column gap-4">
+                        <li><a id="getHome" class="text-white text-decoration-none position-relative" style="top: 100px;" href="index.html">Home</a></li>
+                                <li><a id="getSearch" class="text-white text-decoration-none position-relative" style="top: 100px;" href="#Search">Search</a></li>
+                                    <li><a id="getCategories" class="text-white text-decoration-none position-relative" style="top: 100px;" href="#Categories">Categories</a></li>
+                                    <li><a id="getArea" class="text-white text-decoration-none position-relative" style="top: 100px;" href="#Area">Area</a></li>
+                                    <li><a id="getIngredients" class="text-white text-decoration-none position-relative" style="top: 100px;" href="#Ingredients">Ingredients</a></li>
+                                    <li><a id="getContact" class="text-white text-decoration-none position-relative" style="top: 100px;" href="#Contact Us">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="nav-footer">
+                            <div class="icons d-flex text-break gap-2 cursor">
+                                <i class="fa-brands fa-facebook"></i>
+                                <i class="fa-brands fa-twitter"></i>
+                                <i class="fa-solid fa-globe"></i>
+                            </div>
+                            <div class="footer w-100">
+                                <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+        
+                   <div class="MainTab d-flex flex-column justify-content-between align-items-center p-4 height text-black  vh-100 ">
+                    <div class="img-NavBar">
+                        <img src="./img/logo.png" width="50px" class="d-block" alt="">
+                    </div>
+                    <div class="icon-NavBar">
+                        <i id="OpenNav" class="fa-solid open-close-icon fa-align-justify fa-2x cursor d-block"></i>
+                        <i id="closeNav" class="fa-solid close-icon fa-times fa-2x cursor d-none"></i>
+                    </div>
+                    <div class="footer-NavBar">
+                        <i class="fa-solid fa-globe d-block"></i>
+                        <i class="fa-solid fa-share-nodes"></i>
+                    </div>
+                   </div>
+                </div>
+
+                <section id="Contact" class="min-vh-100 bg-black">
+                    <div class="container w-75">
+                        <div class="input-contact vh-100 d-flex justify-content-center align-items-center">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <input  onkeyup="ValidationForInput()" type="text" class="form-control w-100" placeholder="Enter your Name"  id="Name">
+                                    <div id="x" class="alert AlertName alert-danger d-none text-center" role="alert">
+                                        Special characters and numbers not allowed and The beginning of the third letter
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input onkeyup="ValidationForInput()" type="email" class="form-control w-100" placeholder="Enter your Email" id="Email" >
+                                    <div class="alert AlertEmail alert-danger d-none text-center" role="alert">
+                                        Email not valid *exemple@yyy.zzz
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input oninput="ValidationForInput()" type="tel" class="form-control w-100" placeholder="Enter your Phone" id="phone" >
+                                    <div class="alert AlertPhone alert-danger d-none text-center" role="alert">
+                                        Enter valid Phone Number
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input oninput="ValidationForInput()" type="number" min="1" class="form-control w-100" placeholder="Enter your Age"  id="Age">
+                                    <div class="alert AlertAge alert-danger d-none text-center" role="alert">
+                                        Enter valid Age and must older than 10
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input onkeyup="ValidationForInput()" type="password" class="form-control w-100" placeholder="Enter your Password" id="pass" >
+                                    <div class="alert AlertPass alert-danger d-none text-center" role="alert">
+                                        Enter valid password *Minimum eight characters, at least one letter and one number:*
+                                      </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <input onkeyup="ValidationForInput()" type="password" class="form-control w-100" placeholder="Repassword" id="Repassword" >
+                                    <div class="alert AlertRePass alert-danger d-none text-center" role="alert">
+                                        Enter valid repassword
+                                      </div>
+                                </div>
+                                <div class="sumitbtn text-center">
+                                    <button id="buttonSubmit" class="btn btn-outline-danger disabled">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </section>
+                 <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+                 <script src="./Js/jquery-3.7.1.min.js"></script>
+                 <script src="./Js/js.js"></script>
+</body>
+</html>

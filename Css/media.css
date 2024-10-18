@@ -1,0 +1,41 @@
+@media screen and (max-width: 767.40px) {
+    .inner{
+        position: relative;
+        left: 13%;
+    }
+    .inner img{
+        width: 100% !important;
+    }
+}
+@media screen and (max-width: 625px) {
+    .inner{
+        position: relative;
+        left: 15%;
+    }
+
+}
+@media screen and (max-width:1300px) {
+    .Search-Input{
+        position: relative;
+        left: 8%;
+    }
+}
+
+
+@media screen and (max-width:605px) {
+    .Search-Input{
+        position: relative;
+        left: 20%;
+    }
+    .Search-Input input{
+        width: 75%;
+    }
+}
+
+
+@media screen and (max-width:307px) {
+    .Search-Input{
+        position: relative;
+        left: 28%;
+    }
+}
